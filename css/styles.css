@@ -1,0 +1,221 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  column-gap: 18px;
+}
+
+.grid-Header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.headerLogo-grid {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.nav-grid {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.article-grid {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+.aside-grid {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.ultimotwitt-grid {
+  grid-column: 1;
+  grid-row: 4;
+  vertical-align: top;
+}
+
+.misfotos-grid {
+  grid-column: 2;
+  grid-row: 4;
+  vertical-align: top;
+}
+
+.misamigos-gird {
+  grid-column: 3;
+  grid-row: 4;
+  vertical-align: top;
+}
+
+/* Elementos principales de la página */
+
+body {
+  color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 900px;
+  margin: auto;
+  padding: 2%;
+  background: url("../images/fond_jaune.png");
+}
+
+/* ENCABEZADO */
+
+header {
+  background: url("../images/separateur.png") repeat-x bottom;
+}
+
+#main_title {
+  display: inline-block;
+}
+
+#logo,
+header h1 {
+  display: inline-block;
+  margin-bottom: 0px;
+  font-family: "BallparkWeiner", serif;
+  font-weight: normal;
+  font-size: 2.8em;
+}
+
+header h2 {
+  margin-top: 0px;
+  font-size: 1.1em;
+  font-family: Dayrom, serif;
+  font-weight: normal;
+}
+
+/* NAVEGACION */
+
+nav {
+  display: inline-block;
+  width: 840px;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  font-size: 1.3em;
+  color: #181818;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+
+/* IMAGEN DEL BANER Y LEYENDA */
+
+#banner_image {
+  margin-top: 15px;
+  height: 200px;
+  border-radius: 5px;
+  background: url(../images/sanfrancisco.jpg) no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px #1c1a19;
+  margin-bottom: 25px;
+}
+
+.banner_desciption {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 5px 5px;
+  width: 99.5%;
+  height: 33px;
+  padding-top: 15px;
+  padding-left: 4px;
+  background-color: rgba(24, 24, 24, 0.8);
+  color: white;
+  font-size: 0.8em;
+}
+
+.red_button {
+  display: inline-block;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: #f44336;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3px 8px 0px 8px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ARTICLE AND ASIDE */
+
+.ico_categorie {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+article,
+aside {
+  display: inline-block;
+  text-align: justify;
+  vertical-align: top;
+}
+
+aside {
+  position: relative;
+  width: 235px;
+  background-color: #706b64;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 0.9em;
+}
+
+#zozor_picture {
+  text-align: center;
+}
+
+#zozor_picture img {
+  border: 1px solid #181818;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  background: url(../images/ico_top.png) no-repeat top center,
+    url(../images/separateur.png) repeat-x top;
+  padding-top: 25px;
+}
+
+footer p,
+footer ul {
+  font-size: 0.8em;
+}
+
+footer h1 {
+  font-size: 1.1em;
+}
+
+#my_friends ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  width: 48%;
+  list-style-image: url("../images/ico_liensexterne.png");
+  padding-left: 2px;
+}
+a {
+  text-decoration: none;
+  color: #760001;
+}
